@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REsearch AI</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+    <div class="background-layer"></div>
+    <div class="app-shell">
+        <header class="topbar">
+            <div class="brand-block">
+                <span class="eyebrow">Research AI Platform</span>
+                <h1 class="brand">REsearch AI</h1>
+                <p class="subtitle">Professional AI intelligence for web research, summarization, and source-critical
+                    reports.</p>
+            </div>
+            <div class="hero-chip">
+                <span>Model</span>
+                <strong>noor-small</strong>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="hero-panel">
+                <div class="hero-copy">
+                    <p class="microcopy">AI research dashboard</p>
+                    <h2>Research smarter with a premium AI workspace.</h2>
+                    <p>Enter your topic, press launch research, and receive a polished report with source links and
+                        critique.</p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">Smart modules</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">Responsive layout</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">Noor</span>
+                            <span class="stat-label">Custom model</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-form-panel">
+                    <div class="input-section">
+                        <label for="topicInput">Research topic</label>
+                        <input id="topicInput" type="text" placeholder="e.g. Sheikh Noor Abdullah legacy" />
+                    </div>
+                    <button id="runButton">
+                        <span class="button-text">Launch research</span>
+                        <span class="loader hidden" id="buttonLoader"></span>
+                    </button>
+                    <p class="input-note">Created by Noor Abdullah — refined for professional research output.</p>
+                </div>
+            </section>
+
+            <section class="insight-grid">
+                <article class="insight-card accent-card">
+                    <div class="card-head"><span>Pipeline status</span></div>
+                    <p id="statusText">Ready to start.</p>
+                </article>
+                <article class="insight-card">
+                    <div class="card-head"><span>Search result preview</span></div>
+                    <div class="output-content" id="searchText">No results yet.</div>
+                </article>
+                <article class="insight-card">
+                    <div class="card-head"><span>Scrape summary</span></div>
+                    <div class="output-content" id="scrapeText">No scraped content yet.</div>
+                </article>
+            </section>
+
+            <section class="report-grid">
+                <article class="report-card">
+                    <div class="card-head">
+                        <div>
+                            <h3>Research report</h3>
+                            <p>Generated summary and recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="output-content" id="reportText">Your report output will appear here.</div>
+                </article>
+                <article class="report-card">
+                    <div class="card-head">
+                        <div>
+                            <h3>Critic feedback</h3>
+                            <p>Evaluation of the report quality and improvements.</p>
+                        </div>
+                    </div>
+                    <div class="output-content" id="feedbackText">No feedback yet.</div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>Created by Noor Abdullah</span>
+        </footer>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

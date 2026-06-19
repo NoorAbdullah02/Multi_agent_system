@@ -1,5 +1,5 @@
-openai>=0.27.0
 langchain>=0.0.300
+langchain-mistralai>=1.1.5
 tiktoken>=0.4.0
 beautifulsoup4>=4.12.2
 tavily>=0.1.0
